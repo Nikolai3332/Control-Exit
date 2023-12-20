@@ -1,10 +1,16 @@
-string massage;
-
-massage = "";
-
-while (massage != "exit")
+internal class Program
 {
-  Console.Write("Введите exit если хотите завершить программу.");
-  massage = Console.ReadLine();
-  Console.Clear();
+    private static void Main(string[] args)
+    {
+        string massage;
+
+        massage = "";
+
+        while (massage != "exit")
+        {
+            Console.Write("Введите exit если хотите завершить программу.");
+            massage = Console.ReadLine();
+            Console.Clear();
+        }
+    }
 }
