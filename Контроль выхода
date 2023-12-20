@@ -1,9 +1,10 @@
 string massage;
 
-        massage = "";
+massage = "";
 
-        while (massage != "exit")
-        {
-            Console.Write("Введите exit если хотите завершить программу.");
-            massage = Console.ReadLine();
-            Console.Clear();
+while (massage != "exit")
+{
+  Console.Write("Введите exit если хотите завершить программу.");
+  massage = Console.ReadLine();
+  Console.Clear();
+}
