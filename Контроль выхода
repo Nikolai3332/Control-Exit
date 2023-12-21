@@ -3,15 +3,21 @@ internal class Program
     private static void Main(string[] args)
     {
         string message = "";
-        bool esc = true;
+        string commandExit = "exit";
+        bool isExitTyped = false;
 
-        while (message != "exit")
+        while (!isExitTyped)
         {
             Console.Write("Введите exit если хотите завершить программу.");
             message = Console.ReadLine();
-            esc = false;
-            break;
+            
+            if (message == commandExit)
+            {
+                isExitTyped = true;
+            }
+            else
+                Console.WriteLine("Программа не закрыта.");
         }
-        Console.Clear();
+        Console.ReadKey();
     }
 }
