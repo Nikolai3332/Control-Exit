@@ -6,18 +6,21 @@ internal class Program
         string commandExit = "exit";
         bool isExitTyped = false;
 
-        while (!isExitTyped)
+        while (isExitTyped == false)
         {
-            Console.Write("Введите exit если хотите завершить программу.");
+            Console.Write($"Введите {commandExit} если хотите завершить программу.");
             message = Console.ReadLine();
-            
+
             if (message == commandExit)
             {
                 isExitTyped = true;
             }
             else
+            {
                 Console.WriteLine("Программа не закрыта.");
+            }
         }
+
         Console.ReadKey();
     }
 }
