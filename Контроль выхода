@@ -2,15 +2,16 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        string massage;
+        string message = "";
+        bool esc = true;
 
-        massage = "";
-
-        while (massage != "exit")
+        while (message != "exit")
         {
             Console.Write("Введите exit если хотите завершить программу.");
-            massage = Console.ReadLine();
-            Console.Clear();
+            message = Console.ReadLine();
+            esc = false;
+            break;
         }
+        Console.Clear();
     }
 }
